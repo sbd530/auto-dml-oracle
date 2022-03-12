@@ -1,19 +1,20 @@
 {
   "name": "auto-dml-oracle",
   "version": "1.0.0",
-  "description": "",
+  "description": ".sql 파일을 읽어서 대량 dml을 자동으로 실행한다.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "sbd530",
   "license": "ISC",
   "engines": {
     "node": ">=14"
   },
   "engineStrict": true,
   "dependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "oracledb": "^5.3.0"
   }
 }
