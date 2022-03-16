@@ -1,6 +1,6 @@
-import oracledb from 'oracledb'
+const oracledb = require('oracledb')
 
-export async function getConnection() {
+module.exports = async function getConnection() {
     oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT
     try {
         return await oracledb.getConnection({
